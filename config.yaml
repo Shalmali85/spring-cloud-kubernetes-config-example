@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-kubernetes
+  namespace: default
+data:
+  application.properties: |-
+    welcome.message=Hello facebook from app.properties
+    welcome.endPointMessage=Hi from app.properties
+  url: https://www.gmail.com
