@@ -12,6 +12,7 @@
 - minikube start
 - docker build -t docker_hub/config-kubernetes:0.01 .
 - docker push docker_hub/config-kubernetes:0.01
+- docker run -p 8080:8080 docker_hub/config-kubernetes:0.01
 - kubectl apply -f config.yaml - For applying the ConfigMap changes
 - kubectl apply -f deploy.yaml - For applying deployment and service changes
 - kubectl apploy -f role.yaml - Optional in case service account exception (cannot access resource listed in namespace)
